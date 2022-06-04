@@ -11,6 +11,7 @@ body{
     height:100%;
     background: linear-gradient(to right,#f39c12,#e67e22,#f39c12);
     display: flex;
+    flex: 1 0;
     flex-direction: column;
     align-items: center;
 }
@@ -35,12 +36,18 @@ body{
 #container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width:100%;
+    flex-direction: row;
+
 }
+
 .Recipe{
     background-color: #a15e10;
     z-index: 0;
+    display: block;
     width: 100%;
     padding: 1%;
     margin: 3px;
@@ -50,7 +57,10 @@ body{
     font-weight: bold;
     box-shadow: 10px 10px 30px;
     Color:Black;
+    flex: 0;
 }
+
+
 .Recipe:hover{
     background-color: #e4af62;
     box-shadow: 0px 0px 30px 2px cyan;
@@ -59,11 +69,13 @@ body{
 
 .Recipe img{
     max-height: 400px;
-    max-width: 600px;
+    min-width: 500px;
+    width: 100%;
     border-radius: 20px;
     
 }
 a{
+    display: block;
     Color:Black;
     text-decoration: none;
     display: block;
