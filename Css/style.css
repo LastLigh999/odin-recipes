@@ -41,6 +41,7 @@ body{
     justify-content: space-around;
     width:100%;
     flex-direction: row;
+    
 
 }
 
@@ -57,7 +58,7 @@ body{
     font-weight: bold;
     box-shadow: 10px 10px 30px;
     Color:Black;
-    flex: 0;
+    flex: 0 0 31%;
 }
 
 
